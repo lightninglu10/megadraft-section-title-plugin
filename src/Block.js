@@ -27,14 +27,16 @@ export default class Block extends Component {
   }
 
   _handleCaptionChange = (event) => {
-    this.props.container.updateData({caption: event.target.value});
+    this.props.container.updateData({sectionTitle: event.target.value});
   }
 
-  render(){
+  render() {
     return (
       <div className={css(styles.titleBlock)}>
-        <input placeholder="Section Title..." className={css(styles.input)} onChange={this._handleCaptionChange} />
-        <hr />
+        {this.props.blockProps.getReadOnly()
+          ?   <div> { this.props.data.sectionTitle } </div>
+          :   <input placeholder="Section Title..." className={css(styles.input)} onChange={this._handleCaptionChange} />
+        }
       </div>
     );
   }
@@ -42,13 +44,19 @@ export default class Block extends Component {
 
 var styles = StyleSheet.create({
   titleBlock: {
-
+    paddingBottom: '14px',
+    borderBottom: '1px solid rgba(0, 0, 0, .1)',
+    fontFamily: 'Roboto',
+    color: '#3C394C',
   },
   input: {
     border: 'none',
     outline: 'none',
-    fontSize: '2em',
+    fontSize: '24px',
     width: '100%',
-    textAlign: 'center',
-  }
+  },
+
+  title: {
+    fontSize: '24px',
+  },
 })

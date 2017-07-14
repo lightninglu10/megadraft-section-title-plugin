@@ -11,7 +11,7 @@ import FaHeader from 'react-icons/lib/fa/header';
 export default class extends React.Component {
   render() {
     return (
-      <FaHeader width="24" height="24" {...this.props} />
+      <FaHeader width="18" height="18" {...this.props} style={{position: 'absolute', 'left': '50%', top: '25%', transform: 'translate(-50%)'}}/>
     );
   }
 }

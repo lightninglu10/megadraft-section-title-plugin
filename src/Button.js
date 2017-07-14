@@ -20,7 +20,6 @@ export default class Button extends Component {
   onClick(e) {
     const data = {
       type: constants.PLUGIN_TYPE,
-      caption: "Initial plugin text"
     };
 
     this.props.onChange(insertDataBlock(this.props.editorState, data));
@@ -28,7 +27,7 @@ export default class Button extends Component {
 
   render() {
     return (
-      <button className={this.props.className} type="button" onClick={this.onClick} title={constants.PLUGIN_NAME}>
+      <button className={this.props.className} type="button" onClick={this.onClick} title={constants.PLUGIN_NAME} style={{position: 'relative'}}>
         <Icon />
       </button>
     );
