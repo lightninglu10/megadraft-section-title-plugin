@@ -33,7 +33,7 @@ export default class Block extends Component {
   render() {
     return (
       <div className={css(styles.titleBlock)}>
-        {this.props.blockProps.getReadOnly()
+        {this.props.blockProps.getInitialReadOnly()
           ?   <div> { this.props.data.sectionTitle } </div>
           :   <input value={this.props.data.sectionTitle} placeholder="Section Title..." className={css(styles.input)} onChange={this._handleCaptionChange} />
         }
