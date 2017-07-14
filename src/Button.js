@@ -29,7 +29,7 @@ export default class Button extends Component {
   render() {
     return (
       <button className={this.props.className} type="button" onClick={this.onClick} title={constants.PLUGIN_NAME}>
-        <i className="fa fa-header" aria-hidden="true"></i>
+        <Icon />
       </button>
     );
   }

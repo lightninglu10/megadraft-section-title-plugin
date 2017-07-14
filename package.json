@@ -1,12 +1,14 @@
 {
   "name": "megadraft-section-title",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Section Title",
   "main": "lib/plugin.js",
   "dependencies": {
+    "aphrodite": "^1.2.1",
     "megadraft": "^0.4.26",
     "react": "15.2.1",
-    "react-dom": "15.2.1"
+    "react-dom": "15.2.1",
+    "react-icons": "^2.2.5"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
