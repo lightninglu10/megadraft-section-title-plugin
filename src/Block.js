@@ -32,18 +32,10 @@ export default class Block extends Component {
 
   render(){
     return (
-      <CommonBlock {...this.props} actions={this.actions}>
-        <BlockContent>
-          <pre>{this.props.data.caption || "- NO TEXT -"}</pre>
-        </BlockContent>
-
-        <BlockData>
-          <BlockInput
-            placeholder="Caption"
-            value={this.props.data.caption}
-            onChange={this._handleCaptionChange} />
-        </BlockData>
-      </CommonBlock>
+      <div>
+        <input />
+        <hr />
+      </div>
     );
   }
 }
