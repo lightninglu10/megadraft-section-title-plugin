@@ -34,7 +34,11 @@ export default class Block extends Component {
     return (
       <div className={css(styles.titleBlock)}>
         {this.props.blockProps.getInitialReadOnly()
-          ?   <div className={css(styles.title)}> { this.props.data.sectionTitle } </div>
+          ?   <a className={css(styles.link)} name={this.props.data.sectionTitle.replace(new RegExp(' ', 'g'), '_')}>
+                <div className={css(styles.title)}>
+                  { this.props.data.sectionTitle }
+                </div>
+              </a>
           :   <div className={css(styles.inputWrapper)}>
                 <div className={css(styles.inputLabel)}> <span className={css(styles.inputText)}>Section Title </span></div>
                 <input value={this.props.data.sectionTitle} placeholder="Start Typing..." className={css(styles.input)} onChange={this._handleCaptionChange} />
@@ -46,6 +50,9 @@ export default class Block extends Component {
 }
 
 var styles = StyleSheet.create({
+  link: {
+    textDecoration: 'none',
+  },
   titleBlock: {
     paddingBottom: '14px',
     borderBottom: '1px solid rgba(0, 0, 0, .1)',
