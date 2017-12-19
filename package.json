@@ -1,6 +1,6 @@
 {
   "name": "megadraft-section-title",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Section Title",
   "main": "lib/plugin.js",
   "dependencies": {
