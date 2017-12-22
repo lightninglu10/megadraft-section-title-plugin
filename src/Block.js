@@ -34,7 +34,7 @@ export default class Block extends Component {
     return (
       <div className={css(styles.titleBlock)}>
         {this.props.blockProps.getInitialReadOnly()
-          ?   <a className={css(styles.link)} name={this.props.data.sectionTitle.replace(new RegExp(' ', 'g'), '_')}>
+          ?   <a className={css(styles.link)} name={this.props.data.sectionTitle ? this.props.data.sectionTitle.replace(new RegExp(' ', 'g'), '_') : ''}>
                 <div className={css(styles.title)}>
                   { this.props.data.sectionTitle }
                 </div>
