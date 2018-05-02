@@ -1628,9 +1628,9 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-draft-js@0.10.4:
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.4.tgz#147741642097c8120d8edc232e9503e8b7fb8d35"
+draft-js@0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
   dependencies:
     fbjs "^0.8.15"
     immutable "~3.7.4"
@@ -2701,6 +2701,10 @@ immutable@~3.7.4:
   version "3.7.6"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
 
+immutable@~3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -3363,14 +3367,14 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-megadraft@^0.4.33:
-  version "0.4.33"
-  resolved "https://registry.yarnpkg.com/megadraft/-/megadraft-0.4.33.tgz#ae7e40f468267f5955651af47399c9fea4cd2705"
+megadraft@^0.4.37:
+  version "0.4.37"
+  resolved "https://registry.yarnpkg.com/megadraft/-/megadraft-0.4.37.tgz#30727a0421954b1801e4e44d59424265a1aed5e1"
   dependencies:
     backstage-modal "^0.3.2"
     classnames "^2.2.5"
-    draft-js "0.10.4"
-    immutable "~3.7.4"
+    draft-js "0.10.5"
+    immutable "~3.8.2"
     prop-types "^15.5.10"
     setimmediate "^1.0.4"
 
